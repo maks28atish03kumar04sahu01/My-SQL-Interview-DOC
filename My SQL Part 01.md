@@ -342,18 +342,157 @@ MySQL is usually case-insensitive for table and column names (especially on Wind
 
 MySQL is typically used for web applications and small to medium-scale systems due to its simplicity and speed. Oracle SQL offers more advanced features such as built-in support for PL/SQL, complex transaction controls, real application clusters (RAC), and extensive backup and recovery tools. MySQL performs exceptionally well for read-heavy workloads and simple queries used commonly in web applications. MySQL supports stored procedures and triggers, but its procedural capabilities are limited compared to Oracle. 
 
+## Q1. What Is Database? 
 
+A database is an organized collection of interrelated data stored in a structured format that enables efficient retrieval, insertion, deletion, and management of information. It allows users to organize data into tables, rows, columns, and indexes, making it easier to quickly access and manage relevant information. Databases also offer distinct APIs for performing various operations such as creating, managing, and searching data. Widely used databases include MySQL, Oracle, MongoDB, PostgreSQL, and SQL Server. MySQL, in particular, is known for its reliability, ease of use, and strong community support. 
 
+## Q2. What is DBMS (Database Management System)? 
 
+The software which is used to manage database is called Database Management System (DBMS). For Example, MySQL, Oracle etc. are popular commercial DBMS used in different applications. 
 
+## 03. What are the different types of SQL languages used in a DBMS? 
 
+1. **DDL (Data Definition Language)** Used to define and modify the structure of database objects like tables, indexes, and schemas. Common DDL commands include CREATE, ALTER, DROP, and TRUNCATE.  
 
+2. **DML (Data Manipulation Language)** Used for manipulating data within tables. It includes commands like SELECT, INSERT, UPDATE, and DELETE for retrieving and modifying data. 
 
+3. **DCL (Data Control Language)** Used to control access to data and manage user permissions within the database. Common DCL commands are GRANT, REVOKE. 
 
+4. **TCL (Transaction Control Language)** Deals with the transactions within a database, ensuring the integrity of the data. Common TCL commands include COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION. 
 
+5. **DQL (Data Query Language)** Focused specifically on querying the data. The main DQL command is SELECT. 
 
+* Stored Procedures and functions are pre-compiled SQL statements that can be executed as a unit. Stored procedures allow for better performance and security, as well as the reuse of logic within the database.  
 
+* Triggers are Special types of procedures that automatically execute in response to certain events (like INSERT, UPDATE, or DELETE operations) on a table.  
 
+* Indexes are the Structures that improve the speed of data retrieval operations on a database table, making queries more efficient. 
+
+* Views are the Virtual tables that provide a way to simplify complex queries by creating a predefined result set from one or more tables, which can be queried as if it were a table. 
+
+* Normalization is a process in DBMS to minimize redundancy and dependency by organizing fields and table relations in a database.  
+
+## Q4. In DBMS which tasks are allowed to do certain operations? 
+
+Data Definition which helps in creation, modification and removal of definitions that define the organization of data in database. Data Updating which helps in insertion, modification and deletion of the actual data in the database.  Data Retrieval which helps in retrieval of data from the database which can be used by applications for various purposes. 
+
+## Q5. What is User Administration? 
+
+It helps in registering and monitoring users, enforcing data security, monitoring performance, maintaining data integrity, dealing with concurrency control and recovering information corrupted by unexpected failure. 
+
+## Q6. What is My SQL? 
+
+My SQL is a database management system software used for managing the relational database. It is an open-source database software which is supported by Oracle. It is fast, scalable, and easy to use database management system in comparison with Microsoft SQL Server and Oracle Database. It is commonly used in conjunction with PHP scripts for creating powerful and dynamic server-side or web-based enterprise applications. 
+
+## Q7. Features Of My SQL? 
+
+It allows us to implement database operations on tables, rows, columns, and indexes. It defines the database relationship in the form of tables (collection of rows and columns), also known as relations. It provides the Referential Integrity between rows or columns of various tables. It allows us to updates the table indexes automatically. It uses many SQL queries and combines useful information from multiple tables for the end-users.  
+
+## Q8. Advantages Of My SQL? 
+
+It is a cross platform. It used with multiple languages like JAVA, PHP, node js, python, C#. MySQL software is open source. MySQL is RDBMS. MySQL database server is fast, reliable, scalable and easy to use. MySQL server works in client/server or embedded systems. 
+
+## Q9. Difference between SQL & No SQL? 
+
+### SQL: 
+
+1. It is a domain-specific language used to manage data stored in a relational database which requires a fixed schema. Examples: Oracle, MySQL, PostgreSQL, MSSQL, etc. 
+
+2. SQL has a fixed database schema that uses a set of rules that govern the integrity and consistency of data in relational and tabular form. 
+
+3. SQL is a structured query language, as the name implies. Although there are many different dialects in SQL, they all share the same grammar and syntax.  
+
+4. SQL databases are known to be vertically scalable. It adds more power to the underlying cluster or server for CPU, memory, and storage processing.  
+
+### No SQL: 
+
+1. It is a scalable and easy-to-use non-relational database management system which does not require a fixed schema. Examples: MongoDB, HBase, Cassandra, Redis, CouchBase, etc. 
+
+2. NoSQL has a dynamic database schema that uses column-oriented, document-based, graph databases and key-value pairs.  
+
+3. The dynamic nature of NoSQL databases allows for the representation of varying structures, as it places less emphasis on preparation and gives freedom in creating new fields with varying syntax and methods across databases.  
+
+4. NoSQL databases are horizontally scalable, implying that NoSQL adds additional nodes or servers to share some load.  
+
+## Q10. What is normalization? 
+
+Normalization is the process of organizing a relational database's structure to reduce data redundancy, improve data integrity, and optimize its performance. The primary goal of normalization is to eliminate anomalies in the data and create a better database design by dividing large tables into smaller, related ones and defining relationships between them. 
+
+## Q11. What is My SQL Clustering? 
+
+MySQL clustering, also known as MySQL Cluster or MySQL NDB Cluster, is a high-availability, scalable, and distributed database architecture that ensures fault tolerance and automatic data partitioning across multiple nodes. 
+
+## My SQL Data Types
+
+### String Data Type
+
+1. char () = 0 to 255				 
+
+2. varchar () = 0 to 65,535			
+
+3. binary () = 0 to 255				
+
+4. varbinary () = 0 to 65,535			
+
+5. tinytext () = 255 character			
+
+6. text () = 65,535 bytes				
+
+7. mediumtext () = 16,777,215 character	
+
+8. longtext = 4,294,967,295 character
+
+9. tinyblob = 255 bytes
+
+10. blob () = 65,535 bytes
+
+11. mediumblob () = 16,777,215 bytes
+
+12. longblob () = 4,294,967,295 bytes
+
+13. enum (v1, v2, …) = list up to 65,535 values
+
+14. set (v1, v2, ….) = list up to 64 values
+
+### Numeric Data Type
+
+1. bit () = 1 to 64						
+
+2. tinyint () = -128 to 127					
+
+3. int () = -2,147,483,648 to 2,147,483,647		
+
+4. integer () = 2,147,483,648 to 2,147,483,647	
+
+5. smallint () = -32,768 to 32,767			
+
+6. mediumint () = -83,88,608 to 83,88,607		
+
+7. bigint () = -922,337,203,685,447,758,808 to 922,337,203,685,447,758,807
+
+8. bool = 0 / 1
+
+9. boolean = 0 / 1
+
+10. Float (p) = 255.568
+
+11. double (size, d) = 255.568
+
+12. decimal (size, d) = size = 60, d = 30
+
+13. dec (size, d) = size = 60, d = 30 
+
+## Date & Time Data Type
+
+1. date = 1000-01-01 to 9999-12-31 = (year-month-date) 
+
+2. datetime (fsp) = year-month-date hour: minute: second 
+
+3. timestamp (fsp) = year-month-date hour: minute: second 
+
+4. time (fsp) = hour: minute: second 
+
+5. year = four-digit format -> 1901 
 
 
 
