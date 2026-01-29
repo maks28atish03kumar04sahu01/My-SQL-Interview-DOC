@@ -3,25 +3,25 @@
 ## Select The Entire Table In MySQL
 
 ```sql
-select * from studentdemodb;
+select * from employeedemodb;
 ```
 
 ## Select Multiple Columns From a Table in MySQL
 
 ``` sql
-select empname, empprofile from studentdemodb;
+select empname, empprofile from employeedemodb;
 ```
 
 ## Select Single Column From Table In MYSQL
 
 ``` sql
-select empname from studentdemodb;
+select empname from employeedemodb;
 ```
 
 ## Where Clause In MYSQL
 
 ``` sql
-select * from studentdemodb where empname = "Akash Patel";
+select * from employeedemodb where empname = "Arjun Nair";
 ```
 
 ``` sql
@@ -33,15 +33,59 @@ select empname, empprofile, empcompany from studentdemodb where empname = "Tanya
 ### Equal Operator
 
 ``` sql
-select empname from studentdemodb where empage = 50;
+select empname from employeedemodb where empage = 50;
 ```
 
 ### Not Equal Operator
 
+``` sql
+select empname, empprofile from employeedemodb where empcompany != "Google";
+```
+
 ### Greater Than Operator
+
+``` sql
+select empname, empcompany from employeedemodb where empage > 50;
+```
 
 ### Greater Than Equal Operator
 
+``` sql
+select empname, empcompany from employeedemodb where empsalary >= 90000;
+```
+
 ### Smaller Than Operator
 
+``` sql
+select empname, empcompany from employeedemodb where empsalary < 60000;
+```
+
 ### Smaller Than Equal Operator
+
+``` sql
+select empname, empcompany from employeedemodb where empage <= 23;
+```
+
+## AND Operator
+
+``` sql
+select empname, empcompany, empprofile from employeedemodb where empage <= 30 and empsalary >= 90000;
+```
+
+## OR Operator
+
+``` sql
+select empname, empcompany, empprofile from employeedemodb where empage <= 30 or empsalary >= 90000;
+```
+
+## Between Operator
+
+``` sql
+select empname, empcompany, empprofile from employeedemodb where empid between 1 and 5;
+```
+
+## In Operator
+
+``` sql
+select empname, empcompany, empprofile from employeedemodb where empid in(1, 5);
+```
