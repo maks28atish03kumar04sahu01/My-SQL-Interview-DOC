@@ -32,7 +32,8 @@ select distinct empcompany from employeedemodb;
 
 ## Is Null Concept
 
-It will display the data if the data is empty or has a null value.
+It will display the data if the data is empty or has a null value. 
+IS NULL In SQL, ‘IS NULL’ checks if a column contains ‘NULL’ values, which indicates the absence of any data.  
 
 ``` sql
 select * from employeedemodb where empcity is null;
@@ -41,6 +42,7 @@ select * from employeedemodb where empcity is null;
 ## Is Not Null Concept
 
 It will display the data if the data is not empty or does not have a null value.
+IS NOT NULL In SQL, ‘IS NOT NULL’ checks if a column contains non-‘NULL’ values, meaning the column has data. 
 
 ``` sql
 select * from employeedemodb where empcity is not null;
